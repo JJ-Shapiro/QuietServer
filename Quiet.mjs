@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
   console.log("GET");
 });
 
-app.post("/LikeSilenceButNotReallySilence", (req, res) => {
+app.post("/ocean", (req, res) => {
   const data = req.body;
   const muse = req.body.muse;
 
