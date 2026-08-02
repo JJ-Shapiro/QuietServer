@@ -83,11 +83,11 @@ app.post("/ocean", (req, res) => {
   console.log(fileName);
 
   try{
-    fs.writeFileSync(path.join(directoryPath, fileName), "test", "utf-8");
+    fs.writeFileSync(path.join(directoryPath, fileName), muse, "utf-8");
 
   }catch{
     fs.mkdirSync(directoryPath, { recursive: true });
-    fs.writeFileSync(path.join(directoryPath, fileName), hours.toString(), minutes.toString(), "utf-8");
+    fs.writeFileSync(path.join(directoryPath, fileName), muse, "utf-8");
   }
 
   res.sendStatus(200);
